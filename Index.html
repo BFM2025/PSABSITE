@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Public Service Appeal Board (PSAB)</title>
+    <style>
+        :root {
+            --primary-color: #004d99; /* A deep blue for the main theme */
+            --secondary-color: #e6f0ff; /* A lighter, more vibrant blue for backgrounds */
+            --text-color: #333;
+            --link-color: #007bff;
+            --ribbon-bg: #004d99; /* Changed to primary color */
+            --ribbon-border: #ddd;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+        }
+        
+        /* Accessibility and responsive design */
+        * {
+            box-sizing: border-box;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Top ribbon with logo and motto */
+        .top-ribbon {
+            background-color: var(--ribbon-bg); /* Changed background color */
+            border-bottom: 1px solid var(--ribbon-border);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .top-ribbon img {
+            max-width: 150px;
+            height: auto;
+            display: block;
+            margin: 0 auto 10px;
+        }
+
+        .motto {
+            font-style: italic;
+            color: #fff; /* Changed to white for better contrast */
+            margin: 0;
+        }
+        
+        h1, h2, h3 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 5px;
+            margin-top: 2em;
+        }
+
+        h1 { font-size: 2.5em; }
+        h2 { font-size: 2em; }
+        h3 { font-size: 1.5em; }
+
+        .section-box {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        /* Styles for the list that should have bullet points */
+        #what-we-do ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        #what-we-do ul li {
+            margin-bottom: 10px;
+        }
+        
+        /* Styles for the document list which should NOT have bullet points */
+        .documents-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        
+        a {
+            color: var(--link-color);
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .photo-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .photo-item {
+            text-align: center;
+        }
+
+        .photo-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .documents-list li {
+            margin-bottom: 5px;
+        }
+
+        .contact-info {
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            border-top: 1px solid var(--ribbon-border);
+            color: #777;
+        }
+
+        /* Specific styles for the dispute summary section */
+        .dispute-summary {
+            background-color: #f9f9f9;
+            border-left: 5px solid var(--primary-color);
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .dispute-summary h4 {
+            color: var(--primary-color);
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+
+        .dispute-summary p {
+            margin-bottom: 5px;
+        }
+        
+        /* New button styles for the "View all cases" button */
+        .dispute-summary-button {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .dispute-summary-button:hover {
+            background-color: #003d80;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="top-ribbon">
+        <img src="psab-logo.png" alt="Public Service Appeal Board Logo">
+        <p class="motto">Upholding the rights of public servants of Seychelles</p>
+    </header>
+
+    <main class="container">
+        
+        <section id="who-we-are" class="section-box">
+            <h2>Who We Are</h2>
+            <p>We are an independent appeal board established under article 145 of the constitution of Seychelles to adjudicate a limited scope of employment-related grievances brought forward by public service employees in Seychelles. We provide a fair and impartial platform for resolving disputes involving:</p>
+            <ul>
+                <li>a) Appointments to public service positions</li>
+                <li>b) Promotions within the public service</li>
+                <li>c) Disciplinary actions taken against public officers</li>
+                <li>d) Termination of appointments</li>
+                <li>e) Decisions regarding the qualifications of applicants or serving officers</li>
+            </ul>
+            <p>As an independent body, we are committed to upholding justice and ensuring the accountability of government decision-making that affects public servants.</p>
+        </section>
+
+        <section id="our-mission-vision" class="section-box">
+            <h2>Our Mission & Vision</h2>
+            <h3>Our Mission</h3>
+            <p>To protect the rights of public servants by delivering accessible, impartial, and no-cost resolution services for grievances stemming from decisions made by the Government of Seychelles and its agencies.</p>
+            <h3>Our Vision</h3>
+            <p>To be a trusted authority in administrative justice—resolving public service grievances with integrity, fairness, and efficiency while promoting transparency and confidence in public administration.</p>
+        </section>
+        
+        <section id="what-we-do" class="section-box">
+            <h2>What We Do</h2>
+            <h3>Our Services</h3>
+            <p>If you are a public servant personally affected by a decision made by a government agency, we are here to help. All of our services are free and confidential. We provide:</p>
+            <ul>
+                <li>Guidance and support for filing complaints related to dismissals, demotions, suspensions, or denial of benefits</li>
+                <li>Clarification of policies and regulations affecting your rights and employment status</li>
+                <li>Informal mediation to help resolve disputes between employees and public service employers</li>
+                <li>Assistance to rebuild workplace relationships and reduce conflict-related stress</li>
+                <li>Referrals to other resources if your case falls outside our mandate</li>
+            </ul>
+            
+            <h3>Who Can Use Our Services?</h3>
+            <ul>
+                <li>Our services are available to public servants and government employees who have been personally impacted by employment-related decisions made by a government agency.</li>
+                <li>Not sure if you're eligible? <a href="#contact-us">Contact us</a>—we’re here to help.</li>
+            </ul>
+            
+            <h3>Sample Disputes</h3>
+            <p>In our commitment to transparency and accountability, we provide anonymized summaries of disputes in proceedings. This helps inform the public and promotes learning across government institutions. While we protect individual privacy, these examples illustrate the types of cases we handle and the outcomes achieved.</p>
+
+            <a href="/downloads/Summary-of-cases-in-proceedings.pdf" class="dispute-summary-button" target="_blank">View All Cases</a>
+            <div class="dispute-summary">
+                <h4>Case category: Appointments to public service positions</h4>
+                <p><strong>Type of dispute:</strong> Appeal against rejection of application.</p>
+                <p><strong>Summary:</strong> An individual is challenging a government ministry's decision to reject their job application, despite meeting all required qualifications. The rejection was based on a clause in the applicant's private lease agreement, which the applicant argues is an unconstitutional reason for denying public employment.</p>
+                <p><strong>Status:</strong> In proceedings.</p>
+            </div>
+
+            <div class="dispute-summary">
+                <h4>Case Category: Promotions within the public service</h4>
+                <p><strong>Type of dispute:</strong> Grievance regarding a promotion decision.</p>
+                <p><strong>Summary:</strong> A former employee is contesting a demotion at a public service agency, claiming it was unlawful and resulted in a pay cut without a corresponding change in job responsibilities.</p>
+                <p><strong>Status:</strong> In proceedings.</p>
+            </div>
+
+            <div class="dispute-summary">
+                <h4>Case Category: Disciplinary actions taken against public officers</h4>
+                <p><strong>Type of dispute:</strong> Appeal against the suspension of employment.</p>
+                <p><strong>Summary:</strong> A public servant contested their unlawful suspension with pay. During the PSAB intervention the government agency lifted the suspension, allowing the officer to return to duty.</p>
+                <p><strong>Status:</strong> The case was resolved.</p>
+            </div>
+            
+            <div class="dispute-summary">
+                <h4>Case category: Termination of appointments</h4>
+                <p><strong>Type of dispute:</strong> Grievance regarding termination of appointment.</p>
+                <p><strong>Summary:</strong> A former public official who was dismissed for redundancy while on maternity leave is challenging the dismissal. The Supreme Court ordered the Board to hear the case after an initial dismissal for lack of jurisdiction.</p>
+                <p><strong>Status:</strong> In proceedings.</p>
+            </div>
+
+            <div class="dispute-summary">
+                <h4>Case category: Decisions regarding the qualifications of applicants or serving officers</h4>
+                <p><strong>Type of dispute:</strong> Appeal regarding qualification requirements.</p>
+                <p><strong>Summary:</strong> An individual is challenging a government ministry's decision to reject their job application, despite meeting all required qualifications. The rejection was based on a clause in the applicant's private lease agreement, which the applicant argues is an unconstitutional reason for denying public employment.</p>
+                <p><strong>Status:</strong> In proceedings.</p>
+            </div>
+
+            <h3>Support Services</h3>
+            <p>Beyond individual case resolution, we work to strengthen public service practices across government:</p>
+            <h4>Outreach & Education</h4>
+            <p>We partner with government departments to deliver educational programs aimed at:</p>
+            <ul>
+                <li>Increasing awareness of fair employment practices</li>
+                <li>Helping institutions avoid legal disputes through proactive compliance</li>
+                <li>Encouraging consistent and lawful decision-making</li>
+            </ul>
+        </section>
+
+        <section id="photos" class="section-box">
+            <h2>Our Team & Board in Action</h2>
+            <div class="photo-gallery">
+                <div class="photo-item">
+                    <img src="member1-face.jpg" alt="Face photo of Board Member 1">
+                    <p>Board Member 1</p>
+                </div>
+                <div class="photo-item">
+                    <img src="member2-face.jpg" alt="Face photo of Board Member 2">
+                    <p>Board Member 2</p>
+                </div>
+                <div class="photo-item">
+                    <img src="board-sitting.jpg" alt="A photo of a sitting of the board">
+                    <p>A sitting of the PSAB</p>
+                </div>
+                <div class="photo-item">
+                    <img src="secretariat.jpg" alt="A photo of the secretariat of the board">
+                    <p>The PSAB Secretariat</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="documents-resources" class="section-box">
+            <h2>Documents and Resources</h2>
+            <p>Click "View" to open a document in your browser or "Download" to save it to your device.</p>
+            <ul class="documents-list">
+                <li>
+                    <strong>1. Making a complaint.</strong>
+                    (<a href="/downloads/Making-a-complaint.pdf" target="_blank">View</a> |
+                    <a href="/downloads/Making-a-complaint.pdf" download>Download</a>)
+                </li>
+                <li>
+                    <strong>2. Hearing a complaint.</strong>
+                    (<a href="/downloads/Hearing-a-complaint.pdf" target="_blank">View</a> |
+                    <a href="/downloads/Hearing-a-complaint.pdf" download>Download</a>)
+                </li>
+                <li>
+                    <strong>3. PSAB complaint form.</strong>
+                    (<a href="/downloads/PSAB-complaint-form.pdf" target="_blank">View</a> |
+                    <a href="/downloads/PSAB-complaint-form.pdf" download>Download</a>)
+                </li>
+                <li>
+                    <strong>4. PSAB Complaint Form (Word format).</strong>
+                    (<a href="/downloads/PSAB-complaint-form.docx" target="_blank">View</a> |
+                    <a href="/downloads/PSAB-complaint-form.docx" download>Download</a>)
+                </li>
+                <li>
+                    <strong>5. Report 2022 to 2024.</strong>
+                    (<a href="/downloads/Report-2022-to-2024.pdf" target="_blank">View</a> |
+                    <a href="/downloads/Report-2022-to-2024.pdf" download>Download</a>)
+                </li>
+                <li>
+                    <strong>6. Constitution of Seychelles.</strong>
+                    (<a href="/downloads/Constitution-of-Seychelles.pdf" target="_blank">View</a> |
+                    <a href="/downloads/Constitution-of-Seychelles.pdf" download>Download</a>)
+                </li>
+            </ul>
+        </section>
+        
+        <section id="accredited-representatives" class="section-box">
+            <h2>Accredited Representatives</h2>
+            <p>Attorneys: <a href="https://www.judiciary.sc/legal-practitioners/licensed-lawyers/" target="_blank">Click here for a list of licensed lawyers.</a></p>
+            <p>Union representatives</p>
+        </section>
+
+        <section id="feedback" class="section-box">
+            <h2>Feedback</h2>
+            <p>Your feedback helps us improve. Whether you've used our services or simply want to share your thoughts, we welcome your input. Get in touch—your voice matters.</p>
+        </section>
+
+        <section id="contact-us" class="section-box">
+            <h2>Contact Us</h2>
+            <address>
+                <strong>Address:</strong> Premier Building, Albert Street, Victoria.<br>
+                <strong>By email:</strong> <a href="mailto:psab22@seychelles.net">psab22@seychelles.net</a><br>
+                <strong>By phone:</strong> 4412459
+            </address>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 Public Service Appeal Board (PSAB). All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
